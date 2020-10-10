@@ -1,18 +1,18 @@
 {
-  "name": "landing-page",
+  "name": "early_access_page",
   "version": "1.0.0",
-  "description": "generic Landing page to showcase Product features ",
+  "description": "early_access_page of Kahaniverse.com",
   "main": "app.js",
   "scripts": {
     "generate_lambda": "claudia generate-serverless-express-proxy --express-module app",
-    "deploy": "claudia create --handler lambda.handler --deploy-proxy-api --region ap-southeast-1",
+    "deploy": "claudia create --handler lambda.handler --deploy-proxy-api --region ap-southeast-1 --keep --no-optional-dependencies",
     "update": "claudia update",
     "release": "claudia set-version --version production",
     "start": "ntl"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/antonrifco/t_shaped_surfer.git"
+    "url": "git+https://github.com/kahaniverse/early_access_page.git"
   },
   "keywords": [
     "landing",
@@ -23,19 +23,32 @@
   "author": "anton.rifco@gmail.com",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/antonrifco/t_shaped_surfer/issues"
+    "url": "https://github.com/kahaniverse/early_access_page/issues"
   },
-  "homepage": "https://github.com/antonrifco/t_shaped_surfer#readme",
+  "homepage": "https://github.com/kahaniverse/early_access_page#readme",
   "dependencies": {
-    "aws-sdk": "^2.437.0",
-    "aws-serverless-express": "^3.3.6",
-    "body-parser": "^1.18.3",
-    "express": "^4.16.4",
+    "aws-serverless-express": "^3.3.8",
+    "body-parser": "^1.19.0",
+    "express": "^4.17.1",
     "nodemailer": "^5.1.1",
     "xoauth2": "^1.2.0"
   },
   "devDependencies": {
-    "claudia": "^5.4.2",
+    "claudia": "^5.12.0",
+    "grunt": "^1.3.0",
+    "grunt-contrib-compress": "^1.6.0",
+    "grunt-contrib-uglify": "^5.0.0",
+    "grunt-embed-fonts": "^1.0.3",
+    "grunt-purifycss": "^0.1.2",
     "ntl": "^3.2.4"
+  },
+  "files": [
+    "site/index.html",
+    "app.js",
+    "config.js",
+    "lambda.js"
+  ],
+  "optionalDependencies": {
+    "aws-sdk": "^2.759.0"
   }
 }

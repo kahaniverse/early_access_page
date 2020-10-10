@@ -1,0 +1,67 @@
+.form-check-input {
+    width: 1.5em;
+    height: 1.5em;
+    margin: 0em;
+    padding: 0em;
+}
+.form-check-label {
+    text-align: left;
+    vertical-align: text-bottom;
+    padding-top: 0.3em;
+}
+
+.checkboxes {
+    margin-bottom: 1em;
+    padding-left: 25%;
+    padding-top: auto;
+    padding-bottom: auto;
+    align-content: center;
+}
+
+.masthead {
+    position: relative;
+    width: 100%;
+    padding-top: 150px;
+    padding-bottom: 100px;
+    color: white;
+    background: url("../images/bg-pattern.png"), #7b4397;
+    background: -webkit-linear-gradient(right, transparent, black, transparent), -webkit-linear-gradient(top left,black, transparent), -webkit-linear-gradient(bottom right, black, transparent), -webkit-radial-gradient(30% 50%, 40% 30%, transparent, #bb45f7, transparent), -webkit-radial-gradient(70% 50%, 40% 30%, transparent, red, transparent);
+    background-blend-mode: screen;
+}
+
+.masthead {
+    text-align: center;
+}
+
+.masthead h1 {
+    font-size: 30px;
+}
+
+@media (min-width: 992px) {
+    .masthead {
+        height: 100vh;
+        min-height: 775px;
+        padding-top: 0;
+        padding-bottom: 0;
+        background: -webkit-linear-gradient(right, transparent, black, transparent), -webkit-linear-gradient(top left,black, transparent), -webkit-linear-gradient(bottom right, black, transparent), -webkit-radial-gradient(35% 50%, 30% 40%, transparent, #bb45f7, transparent), -webkit-radial-gradient(65% 50%, 30% 40%, transparent, red, transparent);
+
+    }
+    .masthead {
+        margin-bottom: 0;
+        text-align: left;
+    }
+    .masthead h1 {
+        font-size: 50px;
+    }
+}
+
+.spectrum-background {
+    background:
+        linear-gradient(red, transparent),
+        linear-gradient(to top left, lime, transparent),
+        linear-gradient(to top right, blue, transparent);
+    background-blend-mode: screen;
+}
+.slider1 {
+    background: #F5F5F5;    
+}

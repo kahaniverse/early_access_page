@@ -1,5 +1,6 @@
-# T-Shaped Surfer: A Landing Page template
-A generic Landing page template to describe Product ideas and prompting viewers to subscribe for Early Access.
+# Kahaniverse Early Access Page
+This page was initially forked from https://github.com/antonrifco/t_shaped_surfer
+Later the entire design was changed.
 
 Features
 ------------
@@ -39,12 +40,12 @@ npm start
 ```
 
 ## Authors
-
-* [Anton Rifco](https://github.com/antonrifco)
+Kahaniverse Team
 
 ## License
 
 MIT -- see [LICENSE](LICENSE)
 
 ## Thanks To
-Creator of New Age Template: https://startbootstrap.com/themes/new-age/
+* [Anton Rifco](https://github.com/antonrifco)
+
